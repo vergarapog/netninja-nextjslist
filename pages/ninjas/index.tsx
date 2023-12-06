@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
-
 import { Ninja } from "@/types";
+import Link from "next/link";
 
 type Props = {
   ninjas: Ninja[];
@@ -30,10 +30,10 @@ const Ninjas = ({ ninjas }: Props) => {
           {ninjas.map((ninja) => {
             return (
               <div
-                className="bg-white p-3 border-l-8 border-[#f0f0f0] cursor-pointer hover:border-[#4979ff]"
                 key={ninja.id}
+                className="bg-white p-3 border-l-8 border-[#f0f0f0] cursor-pointer hover:border-[#4979ff]"
               >
-                {ninja.name}
+                <Link href={`/ninjas/${ninja.id}`}>{ninja.name}</Link>
               </div>
             );
           })}

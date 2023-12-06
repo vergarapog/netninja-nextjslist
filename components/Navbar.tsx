@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
       <div className="text-2xl space-x-3">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-        <Link href="/ninjas">Next Listing</Link>
+        <Link href="/ninjas">Ninja Listing</Link>
       </div>
     </nav>
   );
