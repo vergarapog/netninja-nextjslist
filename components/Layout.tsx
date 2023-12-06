@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import styles from "@/styles/deftailwind";
 
 type Props = {
   children: ReactNode;
@@ -8,10 +9,20 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="content">
-      <Navbar />
-      {children}
-      <Footer />
+    <div className="min-h-screen px-3">
+      <div className={`${styles.flexCenter} `}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
+        </div>
+      </div>
+      <div className={`flex flex-grow justify-center`}>
+        <div className={`${styles.boxWidth}`}>{children}</div>
+      </div>
+      <div className={`${styles.flexCenter} `}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 };

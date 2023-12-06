@@ -5,13 +5,17 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav>
+    <nav className="py-10 flex w-full justify-between">
       <div className="logo">
-        <h1>Next Link</h1>
+        <Link href="/">
+          <h1 className="text-4xl">Next Link</h1>
+        </Link>
       </div>
-      <Link href="/">Home</Link>
-      <Link href="/about">About</Link>
-      <Link href="/ninjas">Next Listing</Link>
+      <div className="text-2xl space-x-3">
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/ninjas">Next Listing</Link>
+      </div>
     </nav>
   );
 };
