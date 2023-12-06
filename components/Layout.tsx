@@ -9,8 +9,8 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className="min-h-screen px-3">
-      <div className={`${styles.flexCenter} `}>
+    <div className="min-h-screen px-10 bg-[#f0f0f0]">
+      <div className={`${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>

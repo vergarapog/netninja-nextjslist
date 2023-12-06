@@ -5,8 +5,8 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="py-10 flex w-full justify-between">
-      <div className="logo">
+    <nav className="pt-8 flex w-full justify-between">
+      <div className="border-b-">
         <Link href="/">
           <h1 className="text-4xl">Next Link</h1>
         </Link>
